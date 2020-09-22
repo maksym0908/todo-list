@@ -1,0 +1,20 @@
+img {
+    width: 20px;
+}
+.addTodo {    
+    display: flex;
+    input {
+        width: 100%;
+        padding: .5rem 1rem;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        border-bottom: 1px solid rgba(168, 168, 168, 0.1);
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        outline: none;
+    }
+}
+

@@ -1,0 +1,55 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    .modalBody {
+        padding: 1.5rem;
+        width: 450px;
+        border-radius: 5px;
+        background: white;
+        height: 170px; 
+        text-align: center;
+        h1 {
+            text-align: center;
+        }
+        span {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 85px 0 85px;
+
+            button:first-child {
+                color: #ffffff;
+                border-radius: 5px;
+                padding: 0.5rem;
+                background: rgb(99, 99, 253);
+            }
+
+            button:first-child:active {
+                background: blue;
+        }
+
+            
+            button:last-child {
+                color: #ffffff;
+                border-radius: 5px;
+                padding: 0.5rem;
+                background: red;
+            }
+
+            button:last-child:active {
+                background: rgb(210, 0, 0);
+        }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,17 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Написать ToDo приложение",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Найти работу",
+      "completed": false
+    }
+  ], 
+  "filter": "ALL", 
+  "fetching": false,
+  "modal": false
+}

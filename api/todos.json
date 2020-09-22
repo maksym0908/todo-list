@@ -1,0 +1,22 @@
+ [
+    {
+      "id": 1,
+      "title": "Написать ToDo приложение",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Найти работу",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Улучшить работу",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Создать работу",
+      "completed": false
+    }
+  ]

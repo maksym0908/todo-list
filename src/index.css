@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:  #F1F2F3;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.crossed {
+  text-decoration: line-through;
+  
+}
+
+.enlarged {
+  word-wrap: break-word;
+  color: red;
+}
+
+button {
+  background: none;
+	color: inherit;
+	border: none;
+	cursor: pointer;
+  outline: inherit;
+}
+

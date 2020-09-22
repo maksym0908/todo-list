@@ -1,0 +1,83 @@
+.todoItem {
+    
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: .5rem 1rem;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        border-bottom: 1px solid rgba(168, 168, 168, 0.1);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        span  {
+            display: flex;
+             p {
+                width: 475px;
+                margin: 0;
+                padding: 0;
+                word-wrap: break-word;
+             }   
+        }
+    }
+    input {
+        margin-right: 1rem;
+    }
+
+    button {
+        :hover {
+            transform: scale(1.5);
+        }
+        
+        img {
+            width: 15px;
+            transition: transform .2s;
+
+        }
+        .close {
+            color: #fff;
+            border: #fff;
+            :active {
+                background: rgb(210, 0, 0);
+        }
+        }
+        .edit {
+            background: rgb(187, 181, 181);
+            border-radius: 5px;
+            margin-right: 5px;
+            :active {
+                background: rgb(141, 137, 137);
+        }
+        }
+    }
+}
+
+ .crossed {
+    text-decoration: line-through;
+}
+
+.form {
+    div {
+       display: flex;
+       button {
+        border: none;
+        display: flex;
+        padding-top: 10px;
+        background: rgb(99, 99, 253);
+        border-radius: 5px;
+        color:#ffffff;
+        :active {
+            background: blue;
+        }
+    }
+
+    input {
+        width: 80%;
+        padding: .5rem 1rem;
+        :focus {
+            padding: .5rem 1rem;
+        }   
+    }
+    }
+}
+

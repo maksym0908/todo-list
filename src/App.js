@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import classes from './App.module.css';
+import ListContainer from './containers/ListContainer'
+import HeaderContainer from './containers/HeaderContainer'
+import FooterContainer from './containers/FooterContainer'
+import ModalContainer from './containers/ModalContainer';
+import { Spinner } from './assets/Loader/Loader';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export const App = (props) => {
+
+ if (!props.fetching) {
+         return (
+            <div className={classes.wrapper}>
+            <ModalContainer />
+            <HeaderContainer />
+            <ListContainer />
+           { props.todos.length ?  <FooterContainer /> :
+             <p style={{display: 'flex', justifyContent: 'center'}}>На сегодня дел нет, пока что...</p>}
+            </div>
+         )   
+   } else {
+      return <div><Spinner /></div>
+   }
+
+   
+
 }
 
-export default App;
+
+
